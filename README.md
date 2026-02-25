@@ -18,6 +18,12 @@ This repository contains a set of micro-benchmarks to measure the performance of
 | O_DIRECT | bypass page cache | **791** | *Faster* than cached I/O on WSL2 |
 | fsync | flush data + metadata | **734** | No measurable difference from fdatasync |
 
+
+## 📈 Batching Effect (Measured)
+
+![Batching Effect](batch_loglog.svg)
+
+
 ### 🔍 Observations
 
 1. **Per-write fsync is expensive**: ~1.35ms latency, limiting throughput to ~740 ops/sec.
