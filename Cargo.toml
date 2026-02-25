@@ -1,0 +1,27 @@
+[package]
+name = "fsync-cost"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+libc = "0.2"
+
+
+[[bin]]
+name = "fsync-cost"
+path = "src/main.rs"
+
+[[bin]]
+name = "fsync-cost-batch"
+path = "src/main_batch.rs"
+
+[[bin]]
+name = "fsync-cost-odirect"
+path = "src/main_odirect.rs"
+
+[[bin]]
+name = "fsync-cost-fsync"
+path = "src/main_fsync.rs"
